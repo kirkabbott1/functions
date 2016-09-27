@@ -37,14 +37,15 @@ def nightsky_star(star_size, turn, jump_forward):
 
     if abs(position()[0]) * 3 > window_width() or abs(position()[1]) * 3 > window_height():
         home()
+        left(turn)
     else:
         pass
     left(turn)
     forward(jump_forward)
     down()
 
-
-for i in range(70):
+speed(0)
+for i in range(220):
     # generate a random number and store it in a variable
     star_size = random.randint(5, 41)
     turn = random.randint(10, 141)
